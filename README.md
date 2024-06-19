@@ -20,15 +20,7 @@ This repository contains the source code for a Windows Desktop application devel
 - .NET Framework (version 7.0)
 - Backend server running locally (configured as described in the Backend Server Description section)
 
-## Setup
 
-1. **Clone the Repository**
-
-   Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/Nayankumar4986/Desktop-App.git
-   cd Desktop-App
    ```
 
 2. **Open the Project in Visual Studio**
