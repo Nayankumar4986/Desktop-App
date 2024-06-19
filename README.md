@@ -1,4 +1,4 @@
-Below is a sample `README.md` file for your GitHub repository for the Windows Desktop Application project. This README provides an overview of the application, instructions on how to set up and run the application, and details on how to use its features.
+The `README.md` file for your Windows Desktop Application project. This version includes detailed instructions on setting up and using the application, as well as information on interacting with the JSON data for submission storage.
 
 ```markdown
 # Submission Desktop App
@@ -17,9 +17,19 @@ This repository contains the source code for a Windows Desktop application devel
 ## Prerequisites
 
 - Windows Desktop Application Development environment in Visual Studio
-- .NET Framework (version is 7.0)
+- .NET Framework (version 7.0)
 - Backend server running locally (configured as described in the Backend Server Description section)
 
+## Setup
+
+1. **Clone the Repository**
+
+   Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Nayankumar4986/Desktop-App.git
+   cd Desktop-App
+   ```
 
 2. **Open the Project in Visual Studio**
 
@@ -27,11 +37,15 @@ This repository contains the source code for a Windows Desktop application devel
 
 3. **Restore Dependencies**
 
-   Restore the necessary NuGet packages for the project.
+   Restore the necessary NuGet packages for the project, including `Newtonsoft.Json` for JSON handling:
+
+   ```plaintext
+   Install-Package Newtonsoft.Json
+   ```
 
 4. **Configure Backend Server**
 
-   Ensure that your backend server is running and accessible from your local machine. You may need to update the API URLs in the application settings to match the backend server's address.
+   Ensure that your backend server is running and accessible from your local machine. Update the API URLs in the application settings to match the backend server's address.
 
 5. **Build the Application**
 
@@ -41,6 +55,7 @@ This repository contains the source code for a Windows Desktop application devel
 
    Start the application by pressing `F5` or by clicking on the "Start" button in Visual Studio.
 
+## Usage
 
 ### Creating a New Submission
 
@@ -65,19 +80,57 @@ This repository contains the source code for a Windows Desktop application devel
 2. Click "Edit" to modify the submission.
 3. Click "Delete" to remove the submission.
 
+## Backend Interaction
+
+### JSON Data Structure
+
+The backend stores submissions in a JSON file (`db.json`) with the following structure:
+
+```json
+[
+  {
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phoneNumber": "+1234567890",
+    "githubLink": "https://github.com/johndoe",
+    "stopwatchTime": "00:30:00"
+  },
+  {
+    "name": "Jane Doe",
+    "email": "janedoe@example.com",
+    "phoneNumber": "+0987654321",
+    "githubLink": "https://github.com/janedoe",
+    "stopwatchTime": "01:00:00"
+  }
+]
+```
+
+### Fetching Submissions
+
+Submissions are fetched from the backend using the `/read` endpoint with the query parameter `index` to retrieve a specific submission:
+
+```
+GET /read?index=0
+```
+
+### Submitting Data
+
+Form data is submitted to the backend using the `/submit` endpoint with parameters for each field:
+
+```
+POST /submit
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "phoneNumber": "+1234567890",
+  "githubLink": "https://github.com/johndoe",
+  "stopwatchTime": "00:30:00"
+}
+```
+
 ## Contributing
 
 Contributions to this project are welcome. Please fork the repository, make your changes, and submit a pull request. For significant changes, please discuss your changes in an issue before proceeding.
-
-## License
-
-This project is licensed under the Slidely AI Internship
-
-## Contact
-
-For further information, feel free to contact the maintainer at your nayanK092@gmail.com
-
-```
 
 ## DeskTop App Images 
 
@@ -86,11 +139,17 @@ For further information, feel free to contact the maintainer at your nayanK092@g
 ![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
 ![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
 
-### Notes 
-- Replace `https://github.com/Nayankumar4986/Desktop-App` with the actual URL of your GitHub repository.
+## License
 
-- Newtonsoft.Json by James Newton-King
-Json.NET is a popular high-performance JSON framework for .NET
+This project is licensed under the MIT License.
 
+## Contact
 
-This README file provides comprehensive documentation to help users understand, set up, and use your desktop application. Adjust the details according to your specific implementation and project requirements.
+For further information, feel free to contact the maintainer at nayanK092@gmail.com.
+
+```
+
+### Notes
+- Ensure that the JSON structure and API endpoints used in your application match the described format and functionality.
+- Replace the example API URLs and contact email with your actual project details.
+- The `Newtonsoft.Json` package is used for JSON serialization and deserialization, essential for handling submissions in your application.
