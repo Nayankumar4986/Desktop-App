@@ -134,10 +134,14 @@ Contributions to this project are welcome. Please fork the repository, make your
 
 ## DeskTop App Images 
 
-![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
-![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
-![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
-![Screenshot of the app interface](https://github.com/Nayankumar4986/Img-Pdf-Converter-App/blob/main/1.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/1.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/2.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/3.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/4.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/5.png)
+![Screenshot of the app interface](https://github.com/Nayankumar4986/Desktop-App/blob/main/img/6.png)
+
+
 
 ## License
 
