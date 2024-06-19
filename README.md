@@ -1,7 +1,7 @@
 The `README.md` file for your Windows Desktop Application project. This version includes detailed instructions on setting up and using the application, as well as information on interacting with the JSON data for submission storage.
 
 ```markdown
-# Submission Desktop App
+# Desktop App
 
 This repository contains the source code for a Windows Desktop application developed in Visual Basic using Visual Studio. The application provides functionalities to create new form submissions, view existing submissions, and navigate through them using keyboard shortcuts.
 
