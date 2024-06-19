@@ -1,7 +1,23 @@
 The `README.md` file for your Windows Desktop Application project. This version includes detailed instructions on setting up and using the application, as well as information on interacting with the JSON data for submission storage.
 
 ```markdown
-# Desktop App
+## Windows Desktop Application
+Compulsory Features
+Create New Submission Form:
+
+# Fields for Name, Email, Phone Number, GitHub Repository Link.
+Stopwatch functionality that can be started and paused without resetting.
+Submit button to send the data to the backend server.
+Keyboard shortcuts (e.g., Ctrl + S to submit).
+View Submissions Form:
+
+# Displays a list of submissions.
+Navigation buttons ("Previous" and "Next") to cycle through submissions.
+Keyboard shortcuts for navigation (e.g., Ctrl + N for Next, Ctrl + P for Previous).
+Option to edit and delete submissions.
+Public GitHub Repository:
+
+# The project code should be hosted on a public GitHub repository.
 
 This repository contains the source code for a Windows Desktop application developed in Visual Basic using Visual Studio. The application provides functionalities to create new form submissions, view existing submissions, and navigate through them using keyboard shortcuts.
 
