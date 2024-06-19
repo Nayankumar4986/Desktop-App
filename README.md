@@ -17,19 +17,9 @@ This repository contains the source code for a Windows Desktop application devel
 ## Prerequisites
 
 - Windows Desktop Application Development environment in Visual Studio
-- .NET Framework (appropriate version for your project)
+- .NET Framework (version is 7.0)
 - Backend server running locally (configured as described in the Backend Server Description section)
 
-## Setup
-
-1. **Clone the Repository**
-
-   Clone this repository to your local machine:
-
-   ```bash
-   git clone https://github.com/yourusername/submission-desktop-app.git
-   cd submission-desktop-app
-   ```
 
 2. **Open the Project in Visual Studio**
 
@@ -51,7 +41,6 @@ This repository contains the source code for a Windows Desktop application devel
 
    Start the application by pressing `F5` or by clicking on the "Start" button in Visual Studio.
 
-## Usage
 
 ### Creating a New Submission
 
@@ -82,17 +71,19 @@ Contributions to this project are welcome. Please fork the repository, make your
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Slidely AI Internship
 
 ## Contact
 
-For further information, feel free to contact the maintainer at your.email@example.com.
+For further information, feel free to contact the maintainer at your nayanK092@gmail.com
 
 ```
 
-### Notes for Customization
-- Replace `https://github.com/yourusername/submission-desktop-app.git` with the actual URL of your GitHub repository.
-- Update the backend API URLs and email in the "Contact" section as necessary.
-- Ensure that your project includes a LICENSE file if you are choosing to use one.
+### Notes 
+- Replace `https://github.com/Nayankumar4986/Desktop-App` with the actual URL of your GitHub repository.
+
+- Newtonsoft.Json by James Newton-King
+Json.NET is a popular high-performance JSON framework for .NET
+
 
 This README file provides comprehensive documentation to help users understand, set up, and use your desktop application. Adjust the details according to your specific implementation and project requirements.
