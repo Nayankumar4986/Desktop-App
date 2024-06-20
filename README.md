@@ -152,7 +152,7 @@ Contributions to this project are welcome. Please fork the repository, make your
 
 
 
-## Contact
+### Contact
 
 For further information, feel free to contact the maintainer at nayanK092@gmail.com.
 
